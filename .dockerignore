@@ -1,0 +1,27 @@
+# Git and editor
+.git
+.gitignore
+.cursor
+.codex
+*.md
+!assets/references/README.md
+
+# Python local env / caches
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+
+# Secrets and local config (mounted at runtime via compose)
+.env
+.env.*
+credentials.json
+
+# Generated output (large JPGs — not needed in image)
+output/
+
+# Misc
+*.log
+.DS_Store
+agent-tools

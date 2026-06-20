@@ -1,0 +1,16 @@
+services:
+  thumbnail-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      cache_from:
+        - adv_thumbnail_agent-thumbnail-agent:latest
+    container_name: advanced_context_thumbnail_agent
+    restart: always
+    volumes:
+      - .:/app
+      - ./output:/app/output
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1

@@ -1,0 +1,7 @@
+# Project-local Codex profile (optional).
+# Use: CODEX_HOME="$(pwd)/.codex" codex
+#
+# See: https://developers.openai.com/codex/guides/agents-md
+
+[project_docs]
+# AGENTS.md at repo root is loaded automatically when CODEX_HOME is not overridden.
